@@ -1,4 +1,4 @@
-# Raspberry Pi OS image customized for Futurehome cube-1v*
+# Customized Raspberry Pi OS image for Futurehome cube-1v*
 The contents in this repository is provided "as is", without any warranties of any kind.
 
 ## Main differences from official rpios images

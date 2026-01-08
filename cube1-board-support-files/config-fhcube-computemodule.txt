@@ -25,8 +25,6 @@ include config-fhcube-common.txt
 # carrier board was detected.
 gpio=12=op,dh
 
-dtparam=spi=on
-
 # The cube-1v1 Z-Wave radio UART interface is traced out to GPIOs 32/33. These
 # GPIOs can have the PL011 UART mapped to them, so we naturally do that here.
 # Z-Wave in the cube-1v1 is therefore available at /dev/ttyAMA0.
