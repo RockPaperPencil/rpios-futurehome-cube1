@@ -44,17 +44,17 @@ kernels around. The cube-1v0 and cube-1v1 uses different kernels, both
 of which is included in the image.
 
 For a *compute module 1* which is found in the *cube-1v0*, this means running 
-*sudo apt-get remove linux-image**\***rpi-v8*.
+*sudo apt-get remove linux-image\*rpi-v8*.
 
 For the *compute module 3* which is found in the *cube-1v1*, this means running
-*sudo apt remove linux-image**\***rpi-v6*.
+*sudo apt remove linux-image\*rpi-v6*.
 
 ## Swap
 The **rpi-swap** package which had its debut with the release of the Trixie-based
 Raspberry Pi OS is also included in this customized version.
 Because this customized version of the OS is mainly focused on compute modules
 boasting a whopping **four gigabytes** of eMMC storage, the maximum space 
-allowed for swap has been turned all the way down to 192MiB. This setting
+allowed for swap has been turned all the way down to 160MiB. This setting
 is defined in the config file at /etc/rpi/swap.conf.d/50-swap-file-max-size.conf.
 To change the amount of swap space, simply edit the config and reboot the system.
 Do keep in mind the amount of space available for the swap file at /var/swap 
