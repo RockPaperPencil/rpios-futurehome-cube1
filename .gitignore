@@ -1,0 +1,8 @@
+*
+!.gitignore
+!.gitmodules
+!pi-gen
+!Makefile
+!README.md
+!cube1-board-support-files
+!cube1-board-support-files/*.txt

@@ -1,0 +1,20 @@
+# Config for Futurehome cube-1v0 and cube-1v1 smarthubs.
+
+# For more options and information see http://rptl.io/configtxt
+
+# Automatically load initramfs files, if found
+auto_initramfs=1
+
+dtparam=audio=off
+disable_fw_kms_setup=1
+arm_boost=1
+boot_delay_ms=250
+
+[cm1]
+include config-fhcube-computemodule.txt
+
+[cm3]
+arm_64bit=1
+include config-fhcube-computemodule.txt
+
+[all]

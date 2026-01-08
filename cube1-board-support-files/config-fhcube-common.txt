@@ -1,0 +1,11 @@
+# The contents of this file applies to any of the raspberry pi
+# SODIMM form factor compute modules.
+
+# The same i2c RTC chip is found in both cube-1v0 and cube-1v1
+dtparam=i2c_arm=on
+dtoverlay=i2c-rtc,pcf8523
+
+# LEDs are connected to the same GPIOs in the cube-1v0 and cube-1v1 hubs
+dtoverlay=gpio-led,gpio=11,trigger=panic,label=case_led_red
+dtoverlay=gpio-led,gpio=12,trigger=mmc0,label=case_led_green
+dtoverlay=gpio-led,gpio=13,trigger=cpu,default-state=on,label=case_led_blue
