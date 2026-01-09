@@ -19,8 +19,8 @@ dtoverlay=uart0,txd0_pin=14,rxd0_pin=15,pin_func=4
 
 include config-fhcube-common.txt
 
-[gpio42=1]
-# CUBE-1v1 SECTION. Matched/triggered by gpio42 reading high.
+[gpio33=1]
+# CUBE-1v1 SECTION. Matched/triggered by gpio33 reading high.
 # The case LED initially shining GREEN when booting means that a cube-1v1 
 # carrier board was detected.
 gpio=12=op,dh
