@@ -30,7 +30,12 @@ gpio=12=op,dh
 # Z-Wave in the cube-1v1 is therefore available at /dev/ttyAMA0.
 dtoverlay=uart0,txd0_pin=32,rxd0_pin=33,pin_func=7
 
-# Disabled by default; /dev/ttyS0 at DBG header pins 4/5
+# Disabled by default; UART1 (/dev/ttyS0) at DBG header pins 4/5.
+# Using UART1 as a serial console can be done by uncommenting the dtoverlay
+# line below and adding console=ttyS0,115200 to cmdline.txt.
+# - DBG pin 1 is GND
+# - DBG pin4 is gpio15 (rpi uart rx pin)
+# - DBG pin5 is gpio14 (rpi uart tx pin)
 # dtoverlay=uart1,txd1_pin=14,rxd1_pin=15
 
 include config-fhcube-common.txt
